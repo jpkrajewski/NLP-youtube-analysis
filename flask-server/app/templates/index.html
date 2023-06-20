@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Youtube Comments Sentiment Analysis</title>
+</head>
+<body style="background-color: lightskyblue">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Youtube Comments Sentiment Analysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">YouTube Link</h5>
+            <div class="input-group mb-3">
+              <form id="searchForm" method="post" class="form-inline">
+                <div class="input-group">
+                  <input type="text" id="searchInput" name="videoQuery" class="form-control" placeholder="Search for a video">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit" id="searchBtn">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              {% if link %}
+              <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ link }}" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-center">
+                  <img src="{{ url_for('static', filename='plot.png') }}" alt="Image" class="img-fluid" style="border: black 1px solid;">
+                </div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

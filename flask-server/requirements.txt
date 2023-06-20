@@ -1,0 +1,10 @@
+flask
+Flask-SQLAlchemy
+pymongo
+pymysql
+faker
+joblib
+youtube-comment-downloader
+scikit-learn 
+scipy 
+matplotlib
