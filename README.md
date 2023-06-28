@@ -6,6 +6,10 @@ This repository contains the code and resources for analyzing YouTube comments u
 
 YouTube NLP Comment Analysis is a project that aims to extract sentiment and gain valuable insights into the overall perception and sentiment of viewers towards specific videos. By utilizing NLP techniques, we can analyze user-generated comments on YouTube and understand the sentiment expressed by viewers.
 
+## Schema
+
+![Blank diagram (1)](https://github.com/jpkrajewski/NLP-youtube-analysis/assets/95274389/dbec90c8-f969-4391-a4df-c9ff311372d1)
+
 ## Features
 
 - Collect YouTube comments using the web scraping techniques.
